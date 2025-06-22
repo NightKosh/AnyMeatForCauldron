@@ -1,0 +1,30 @@
+[config]
+schemaVersion = "0.0.1"
+
+[package]
+namespace = "nightkosh"
+name = "AnyMeatForCauldron"
+versionNumber = "1.0.0"
+description = "Add an alternative cauldron recipes with cooked meat"
+websiteUrl = "https://github.com/NightKosh/AnyMeatForCauldron"
+containsNsfwContent = false
+
+[package.dependencies]
+denikson-BepInExPack_Valheim = "5.4.2202"
+ValheimModding-Jotunn = "2.25.0"
+
+
+[build]
+icon = "./icon.png"
+readme = "./README.md"
+outdir = "./build"
+
+[[build.copy]]
+source = "plugins"
+target = "plugins"
+
+
+categories = ["mods"]
+community = "valheim"
+
+
