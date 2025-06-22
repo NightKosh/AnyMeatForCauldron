@@ -1,0 +1,11 @@
+{
+  "name": "AnyMeatForCauldron",
+  "author": "Nightkosh",
+  "version_number": "1.0.0",
+  "website_url": "https://github.com/NightKosh/AnyMeatForCauldron",
+  "description": "Add an alternative cauldron recipes with cooked meat.",
+  "dependencies": [
+    "denikson-BepInExPack_Valheim-5.4.2202",
+    "ValheimModding-Jotunn-2.25.0"
+  ]
+}
