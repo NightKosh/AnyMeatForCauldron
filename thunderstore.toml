@@ -4,7 +4,7 @@ schemaVersion = "0.0.1"
 [package]
 namespace = "nightkosh"
 name = "AnyMeatForCauldron"
-versionNumber = "1.0.0"
+versionNumber = "1.0.1"
 description = "Add an alternative cauldron recipes with cooked meat"
 websiteUrl = "https://github.com/NightKosh/AnyMeatForCauldron"
 containsNsfwContent = false
