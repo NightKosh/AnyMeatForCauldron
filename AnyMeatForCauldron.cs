@@ -68,8 +68,8 @@ namespace AnyMeatForCauldron
                 AddRecipe(CraftingStations.Cauldron, 2, "Sausages", 4,
                     new[]
                     {
-                        new RequirementConfig("CookedMeat", 4, 0, false),
-                        new RequirementConfig("Entrails", 1, 0, false),
+                        new RequirementConfig("Entrails", 4, 0, false),
+                        new RequirementConfig("CookedMeat", 1, 0, false),
                         new RequirementConfig("Thistle", 1, 0, false)
                     });
 
@@ -83,7 +83,7 @@ namespace AnyMeatForCauldron
 
             // lvl 3
             if (_wolfJerkyEnabled.Value)
-                AddRecipe(CraftingStations.Cauldron, 3, "Wolfjerky", 2,
+                AddRecipe(CraftingStations.Cauldron, 3, "WolfJerky", 2,
                     new[]
                     {
                         new RequirementConfig("CookedWolfMeat", 1, 0, false),

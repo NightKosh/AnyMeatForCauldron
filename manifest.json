@@ -1,7 +1,7 @@
 {
   "name": "AnyMeatForCauldron",
   "author": "Nightkosh",
-  "version_number": "1.0.0",
+  "version_number": "1.0.1",
   "website_url": "https://github.com/NightKosh/AnyMeatForCauldron",
   "description": "Add an alternative cauldron recipes with cooked meat.",
   "dependencies": [
