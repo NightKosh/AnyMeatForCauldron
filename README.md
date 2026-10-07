@@ -16,9 +16,10 @@ food preparation table and mead ketill. Vanilla recipes remain available.
 - Mashed Meat
 - Oven Pancake Batter
 - Meat In Bread
-- Seal Meat Soup
 - Smoked Moose Meat
 - Meatballs and Poteitr
+- Seal Meat Soup
+- Unbaked Poteitr
 - Smoked Fish
 - Fish Soup
 

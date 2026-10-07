@@ -25,9 +25,10 @@ namespace AnyMeatForCauldron
         private static ConfigEntry<bool> _mashedMeatEnabled;
         private static ConfigEntry<bool> _ovenPancakeUncookedEnabled;
         private static ConfigEntry<bool> _mooseKebabEnabled;
-        private static ConfigEntry<bool> _sealSoupEnabled;
         private static ConfigEntry<bool> _smokedMooseMeatEnabled;
         private static ConfigEntry<bool> _meatballsMashedPoteitrEnabled;
+        private static ConfigEntry<bool> _sealSoupEnabled;
+        private static ConfigEntry<bool> _bakedPoteitrUncookedEnabled;
         private static ConfigEntry<bool> _smokedFishEnabled;
         private static ConfigEntry<bool> _fishSoupEnabled;
         
@@ -65,12 +66,14 @@ namespace AnyMeatForCauldron
                 "Enable or disable Cauldron lvl 6 alternative Oven Pancake Batter recipe.");
             _mooseKebabEnabled = Config.Bind("General", "MooseKebab", true,
                 "Enable or disable Cauldron lvl 7 alternative Meat In Bread recipe.");
-            _sealSoupEnabled = Config.Bind("General", "SealSoup", true,
-                "Enable or disable Cauldron lvl 7 alternative Seal Meat Soup recipe.");
             _smokedMooseMeatEnabled = Config.Bind("General", "SmokedMooseMeat", true,
                 "Enable or disable Cauldron lvl 7 alternative Smoked Moose Meat recipe.");
             _meatballsMashedPoteitrEnabled = Config.Bind("General", "MeatballsMashedPoteitr", true,
                 "Enable or disable Cauldron lvl 7 alternative Meatballs and Poteitr recipe.");
+            _sealSoupEnabled = Config.Bind("General", "SealSoup", true,
+                "Enable or disable Cauldron lvl 7 alternative Seal Meat Soup recipe.");
+            _bakedPoteitrUncookedEnabled = Config.Bind("General", "BakedPoteitrUncooked", true,
+                "Enable or disable Cauldron lvl 7 alternative Unbaked Poteitr recipe.");
             _smokedFishEnabled = Config.Bind("General", "SmokedFish", true,
                 "Enable or disable Cauldron lvl 7 alternative Smoked Fish recipe.");
             _fishSoupEnabled = Config.Bind("General", "FishSoup", true,
@@ -229,17 +232,6 @@ namespace AnyMeatForCauldron
                     });
             }
             
-            if (_sealSoupEnabled.Value)
-            {
-                AddRecipe(CraftingStations.Cauldron, 7, "SealSoup", 1,
-                    new[]
-                    {
-                        new RequirementConfig("CookedSealBlubber", 2, 0, false),
-                        new RequirementConfig("Kale", 2, 0, false),
-                        new RequirementConfig("Ice", 2, 0, false)
-                    });
-            }
-            
             if (_smokedMooseMeatEnabled.Value)
             {
                 AddRecipe(CraftingStations.Cauldron, 7, "SmokedMooseMeat", 1,
@@ -258,6 +250,29 @@ namespace AnyMeatForCauldron
                         new RequirementConfig("CookedMooseMeat", 1, 0, false),
                         new RequirementConfig("Lingonberry", 2, 0, false),
                         new RequirementConfig("Poteitr", 2, 0, false)
+                    });
+            }
+            
+            if (_sealSoupEnabled.Value)
+            {
+                AddRecipe(CraftingStations.Cauldron, 7, "SealSoup", 1,
+                    new[]
+                    {
+                        new RequirementConfig("CookedSealBlubber", 2, 0, false),
+                        new RequirementConfig("Kale", 2, 0, false),
+                        new RequirementConfig("Ice", 2, 0, false)
+                    });
+            }
+            
+            if (_bakedPoteitrUncookedEnabled.Value)
+            {
+                AddRecipe(CraftingStations.Cauldron, 7, "BakedPoteitrUncooked", 1,
+                    new[]
+                    {
+                        new RequirementConfig("CookedSealBlubber", 1, 0, false),
+                        new RequirementConfig("Kale", 2, 0, false),
+                        new RequirementConfig("Poteitr", 1, 0, false),
+                        new RequirementConfig("OatFlour", 2, 0, false)
                     });
             }
             
