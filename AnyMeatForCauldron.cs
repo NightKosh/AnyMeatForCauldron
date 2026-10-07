@@ -81,14 +81,17 @@ namespace AnyMeatForCauldron
             // Cauldron
             // lvl 1
             if (_boarJerkyEnabled.Value)
+            {
                 AddRecipe(CraftingStations.Cauldron, 1, "BoarJerky", 2,
                     new[]
                     {
                         new RequirementConfig("CookedMeat", 1, 0, false),
                         new RequirementConfig("Honey", 1, 0, false)
                     });
+            }
 
             if (_minceMeatSauceEnabled.Value)
+            {
                 AddRecipe(CraftingStations.Cauldron, 1, "MinceMeatSauce", 1,
                     new[]
                     {
@@ -96,9 +99,11 @@ namespace AnyMeatForCauldron
                         new RequirementConfig("NeckTailGrilled", 1, 0, false),
                         new RequirementConfig("Carrot", 1, 0, false)
                     });
+            }
 
             // lvl 2
             if (_sausagesEnabled.Value)
+            {
                 AddRecipe(CraftingStations.Cauldron, 2, "Sausages", 4,
                     new[]
                     {
@@ -106,25 +111,31 @@ namespace AnyMeatForCauldron
                         new RequirementConfig("CookedMeat", 1, 0, false),
                         new RequirementConfig("Thistle", 1, 0, false)
                     });
+            }
 
             if (_turnipStewEnabled.Value)
+            {
                 AddRecipe(CraftingStations.Cauldron, 2, "TurnipStew", 1,
                     new[]
                     {
                         new RequirementConfig("CookedMeat", 1, 0, false),
                         new RequirementConfig("Turnip", 3, 0, false)
                     });
+            }
 
             // lvl 3
             if (_wolfJerkyEnabled.Value)
+            {
                 AddRecipe(CraftingStations.Cauldron, 3, "WolfJerky", 2,
                     new[]
                     {
                         new RequirementConfig("CookedWolfMeat", 1, 0, false),
                         new RequirementConfig("Honey", 1, 0, false)
                     });
+            }
 
             if (_wolfMeatSkewerEnabled.Value)
+            {
                 AddRecipe(CraftingStations.Cauldron, 3, "WolfMeatSkewer", 1,
                     new[]
                     {
@@ -132,12 +143,14 @@ namespace AnyMeatForCauldron
                         new RequirementConfig("Onion", 1, 0, false),
                         new RequirementConfig("Mushroom", 2, 0, false)
                     });
+            }
 
             // lvl 4
             // no recipes
             
             // lvl 5
             if (_seekerAspicEnabled.Value)
+            {
                 AddRecipe(CraftingStations.Cauldron, 5, "SeekerAspic", 2,
                     new[]
                     {
@@ -145,8 +158,10 @@ namespace AnyMeatForCauldron
                         new RequirementConfig("MushroomMagecap", 2, 0, false),
                         new RequirementConfig("RoyalJelly", 2, 0, false)
                     });
+            }
             
             if (_fierySvinstewEnabled.Value)
+            {
                 AddRecipe(CraftingStations.Cauldron, 5, "FierySvinstew", 1,
                     new[]
                     {
@@ -154,9 +169,11 @@ namespace AnyMeatForCauldron
                         new RequirementConfig("Vineberry", 2, 0, false),
                         new RequirementConfig("MushroomSmokePuff", 1, 0, false)
                     });
+            }
             
             // lvl 6
             if (_mashedMeatEnabled.Value)
+            {
                 AddRecipe(CraftingStations.Cauldron, 6, "MashedMeat", 1,
                     new[]
                     {
@@ -164,9 +181,11 @@ namespace AnyMeatForCauldron
                         new RequirementConfig("CookedVoltureMeat", 1, 0, false),
                         new RequirementConfig("Fiddleheadfern", 1, 0, false)
                     });
+            }
 
             // Food preparation table
             if (_loxPieUncookedEnabled.Value)
+            {
                 AddRecipe(CraftingStations.FoodPreparationTable, 1, "LoxPieUncooked", 1,
                     new[]
                     {
@@ -174,8 +193,10 @@ namespace AnyMeatForCauldron
                         new RequirementConfig("CookedLoxMeat", 2, 0, false),
                         new RequirementConfig("BarleyFlour", 4, 0, false)
                     });
+            }
             
             if (_meatPlatterUncookedEnabled.Value)
+            {
                 AddRecipe(CraftingStations.FoodPreparationTable, 1, "MeatPlatterUncooked", 1,
                     new[]
                     {
@@ -183,8 +204,10 @@ namespace AnyMeatForCauldron
                         new RequirementConfig("CookedLoxMeat", 1, 0, false),
                         new RequirementConfig("CookedHareMeat", 1, 0, false)
                     });
+            }
             
             if (_misthareSupremeUncookedEnabled.Value)
+            {
                 AddRecipe(CraftingStations.FoodPreparationTable, 1, "MisthareSupremeUncooked", 1,
                     new[]
                     {
@@ -192,8 +215,10 @@ namespace AnyMeatForCauldron
                         new RequirementConfig("MushroomJotunPuffs", 3, 0, false),
                         new RequirementConfig("Carrot", 2, 0, false)
                     });
+            }
             
             if (_honeyGlazedChickenUncookedEnabled.Value)
+            {
                 AddRecipe(CraftingStations.FoodPreparationTable, 1, "HoneyGlazedChickenUncooked", 1,
                     new[]
                     {
@@ -201,8 +226,10 @@ namespace AnyMeatForCauldron
                         new RequirementConfig("Honey", 3, 0, false),
                         new RequirementConfig("MushroomJotunPuffs", 2, 0, false)
                     });
+            }
             
             if (_piquantPieUncookedEnabled.Value)
+            {
                 AddRecipe(CraftingStations.FoodPreparationTable, 1, "PiquantPieUncooked", 1,
                     new[]
                     {
@@ -210,9 +237,11 @@ namespace AnyMeatForCauldron
                         new RequirementConfig("CookedAsksvinMeat", 2, 0, false),
                         new RequirementConfig("BarleyFlour", 4, 0, false)
                     });
+            }
             
             // MeadKetill
             if (_meadBasePoisonResistEnabled.Value)
+            {
                 AddRecipe(CraftingStations.MeadKetill, 1, "MeadBasePoisonResist", 1,
                     new[]
                     {
@@ -221,6 +250,7 @@ namespace AnyMeatForCauldron
                         new RequirementConfig("NeckTailGrilled", 1, 0, false),
                         new RequirementConfig("Coal", 10, 0, false)
                     });
+            }
         }
 
         private void AddRecipe(string station, int level, string item, int amount, RequirementConfig[] requirements)
