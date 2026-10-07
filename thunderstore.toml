@@ -4,14 +4,14 @@ schemaVersion = "0.0.1"
 [package]
 namespace = "nightkosh"
 name = "AnyMeatForCauldron"
-versionNumber = "1.0.1"
+versionNumber = "1.1.0"
 description = "Add an alternative cauldron recipes with cooked meat"
 websiteUrl = "https://github.com/NightKosh/AnyMeatForCauldron"
 containsNsfwContent = false
 
 [package.dependencies]
-denikson-BepInExPack_Valheim = "5.4.2202"
-ValheimModding-Jotunn = "2.25.0"
+denikson-BepInExPack_Valheim = "5.4.2351"
+ValheimModding-Jotunn = "2.30.2"
 
 
 [build]

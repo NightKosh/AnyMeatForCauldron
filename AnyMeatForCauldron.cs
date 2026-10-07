@@ -12,7 +12,7 @@ namespace AnyMeatForCauldron
     {
         private const string PluginGuid = "nightkosh." + PluginName;
         private const string PluginName = "AnyMeatForCauldron";
-        private const string PluginVersion = "1.0.0";
+        private const string PluginVersion = "1.1.0";
         private static ConfigEntry<bool> _modEnabled;
         private static ConfigEntry<bool> _boarJerkyEnabled;
         private static ConfigEntry<bool> _minceMeatSauceEnabled;
@@ -66,11 +66,11 @@ namespace AnyMeatForCauldron
             _mooseKebabEnabled = Config.Bind("General", "MooseKebab", true,
                 "Enable or disable Cauldron lvl 7 alternative Meat In Bread recipe.");
             _sealSoupEnabled = Config.Bind("General", "SealSoup", true,
-                "Enable or disable Cauldron lvl 7 alternative Seal Soup recipe.");
+                "Enable or disable Cauldron lvl 7 alternative Seal Meat Soup recipe.");
             _smokedMooseMeatEnabled = Config.Bind("General", "SmokedMooseMeat", true,
                 "Enable or disable Cauldron lvl 7 alternative Smoked Moose Meat recipe.");
             _meatballsMashedPoteitrEnabled = Config.Bind("General", "MeatballsMashedPoteitr", true,
-                "Enable or disable Cauldron lvl 7 alternative Meatballs Mashed Poteitr recipe.");
+                "Enable or disable Cauldron lvl 7 alternative Meatballs and Poteitr recipe.");
             _smokedFishEnabled = Config.Bind("General", "SmokedFish", true,
                 "Enable or disable Cauldron lvl 7 alternative Smoked Fish recipe.");
             _fishSoupEnabled = Config.Bind("General", "FishSoup", true,
@@ -88,9 +88,9 @@ namespace AnyMeatForCauldron
             _piquantPieUncookedEnabled = Config.Bind("General", "PiquantPieUncooked", true,
                 "Enable or disable Food preparation table alternative Uncooked Piquant Pie recipe.");
             
-            // mead
+            // Mead ketill
             _meadBasePoisonResistEnabled = Config.Bind("General", "MeadBasePoisonResist", true,
-                "Enable or disable mead alternative Poison Resist Mead recipe.");
+                "Enable or disable Mead ketill alternative Poison Resist Mead recipe.");
             if (_modEnabled.Value)
             {
                 AddRecipes();
@@ -339,7 +339,7 @@ namespace AnyMeatForCauldron
                     });
             }
             
-            // MeadKetill
+            // Mead Ketill
             if (_meadBasePoisonResistEnabled.Value)
             {
                 AddRecipe(CraftingStations.MeadKetill, 1, "MeadBasePoisonResist", 1,
